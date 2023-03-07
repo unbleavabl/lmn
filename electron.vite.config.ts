@@ -31,14 +31,6 @@ export default defineConfig({
     },
   },
 
-  preload: {
-    plugins: [tsconfigPaths, externalizeDepsPlugin()],
-
-    build: {
-      outDir: resolve(devPath, 'preload'),
-    },
-  },
-
   renderer: {
     define: {
       'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),

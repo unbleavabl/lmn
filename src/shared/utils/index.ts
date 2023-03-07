@@ -15,3 +15,5 @@ const appId = `com.${authorInKebabCase}.${name}`.toLowerCase()
 export function makeAppId(id: string = appId): string {
   return id
 }
+
+export const classnames = (...str: string[]) => str.join(' ')

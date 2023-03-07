@@ -1,17 +1,15 @@
-import { Router, Route } from 'electron-router-dom'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
-import { MainScreen, AboutScreen, AnotherScreen } from 'renderer/screens'
+import { MainScreen } from 'renderer/screens'
+import { Start } from './screens/Start'
 
 export function AppRoutes() {
   return (
-    <Router
-      main={
-        <>
-          <Route path="/" element={<MainScreen />} />
-          <Route path="/anotherScreen" element={<AnotherScreen />} />
-        </>
-      }
-      about={<Route path="/" element={<AboutScreen />} />}
-    />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Start />} />
+        <Route path="/main" element={<MainScreen />} />
+      </Routes>
+    </BrowserRouter>
   )
 }

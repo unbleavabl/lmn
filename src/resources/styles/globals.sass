@@ -1,23 +1,56 @@
 @use 'animations' as *
 @use 'resets' as *
 
+@font-face 
+  font-family: 'Poppins'
+  font-style: normal
+  font-weight: 400
+  src: url(/fonts/Poppins-Regular.ttf)
+
+@font-face 
+  font-family: 'Poppins'
+  font-style: normal
+  font-weight: 700
+  src: url(/fonts/Poppins-Bold.ttf)
+
+:root
+  --background-primary: #1D3F9D
+  --accent-primary: #DE7D6C
+
 body, html, app
   display: flex
-  flex-direction: column
   width: 100vw
   height: 100vh
-  color: #965fa3
-  background-image: url('/illustration.svg')
-  background-repeat: no-repeat
-  background-size: cover
-  background-position: 160px 125px
-  scroll-behavior: smooth
+  background: var(--background-primary)
   user-select: none
   overflow: hidden
-  animation: fadeIn 1s forwards
   -webkit-app-region: no-drag
   -webkit-font-smoothing: antialiased
+  font-size: 1.09vw
 
-.disabled
-  filter: grayscale(40%)
-  pointer-events: none
+.outline
+  outline: 1px solid white
+
+.font-xs
+  font-size: 0.46vw
+
+.font-s
+  font-size: 0.72vw
+
+.font-n
+  font-size: 1.09vw
+
+.font-l
+  font-size: 1.56vw
+
+.pl-n
+  padding-left: 1vw
+
+.pl-xs
+  padding-left: 0.2vw
+
+.ls-w
+  letter-spacing: 0.145vw
+
+.lh-s
+  line-height: 0.92vh
