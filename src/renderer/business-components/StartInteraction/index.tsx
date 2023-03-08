@@ -1,9 +1,13 @@
 import { FC } from 'react';
 import { classnames } from 'shared/utils';
 
+
 import styles from './styles.module.sass';
+import { SlideToOpen } from 'renderer/components/SlideToOpen';
+import { useNavigate } from 'react-router-dom';
 
 export const StartInteraction: FC = () => {
+  const navigate = useNavigate();
   return (
     <section className={classnames(styles["interaction-container"], 'outline')}>
       <div className={classnames(styles.date, 'outline')}>
@@ -14,7 +18,7 @@ export const StartInteraction: FC = () => {
           2023
         </div>
       </div>
-      <div className={styles["home-details"]}> 
+      <div className={styles["home-details"]}>
         <div className={classnames(styles["company-name"], 'outline font-s pl-n ls-w')}>Allstate insurance company</div>
         <div className={classnames(styles["home-name"], 'outline pl-n')}>Mr John Q Sample's Bunglow</div>
         <div className={styles["designer-details"]}>
@@ -33,9 +37,16 @@ export const StartInteraction: FC = () => {
         </div>
       </div>
       <button className={styles["home-cta"]}>
+        <img className={styles["home-icon"]} src="/homeicon-01-01.svg" alt="home-icon" />
         Home
       </button>
-      <div className={styles.swiper}>Enter your name</div>
+      <SlideToOpen onOpen={() => {navigate("/main")}}>
+        <div className={classnames(styles.swiper, 'font-l')}>
+          Enter your name
+          <div className={styles.arrow} />
+        </div>
+      </SlideToOpen>
     </section>
   )
 }
+
