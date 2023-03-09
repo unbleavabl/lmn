@@ -24,6 +24,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "@radix-ui/react-popover": "^1.0.5",
     "@react-spring/web": "^9.7.1",
     "@use-gesture/react": "^10.2.24",
     "electron-router-dom": "^1.0.5",
