@@ -1,10 +1,12 @@
 .main-container
   display: flex
   flex-direction: column
-  justify-content: flex-start
+  justify-content: flex-end
   align-items: center
   width: 100%
   padding: 1%
+  position: relative
+  isolation: isolate
 
 .header
   display: flex
@@ -15,12 +17,17 @@
   border: none
   background: none
   color: var(--accent-primary)
+  justify-self: flex-end
+  margin-left: auto
+  margin-right: 1vw
 
 .logo
   height: 4vh
   align-self: flex-start
-  margin-left: 4vh
-  margin-top: 2vh
+  left: 4vw
+  top: 4vh
+  position: absolute
+  background: var(--background-primary)
 
 .image-container
   position: relative
@@ -34,4 +41,16 @@
   font-weight: normal
 
 .house-image
-  height: 70vh
+  height: 100vh
+
+.image-container
+  position: absolute
+
+
+.item-selection-wrapper
+  width: 100vw
+  background: var(--background-primary)
+  z-index: 1
+  display: flex
+  justify-content: center
+  align-items: center

@@ -1,7 +1,30 @@
-export const info = [
+export type Item = {
+  name: string
+  icon: string
+  hotspot: {
+    top: number
+    left: number
+  }
+  description: string
+  types: Array<{
+    name: string
+    image: string
+    options: Array<{
+      name: string
+      description: string
+      image: string
+    }>
+  }>
+}
+
+export const info: Item[] = [
   {
     name: 'roof',
     icon: '/roof.svg',
+    hotspot: {
+      top: 20,
+      left: 86,
+    },
     description:
       'Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat.',
     types: [
@@ -21,6 +44,10 @@ export const info = [
   {
     name: 'plumbing',
     icon: '/plumbing.svg',
+    hotspot: {
+      top: 24,
+      left: 63,
+    },
     description:
       'Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat.',
     types: [
@@ -40,6 +67,10 @@ export const info = [
   {
     name: 'insulation',
     icon: '/homeicon-01-01.svg',
+    hotspot: {
+      top: 20,
+      left: 101,
+    },
     description:
       'Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat.',
     types: [
@@ -61,6 +92,10 @@ export const info = [
     icon: '/homeicon-01-01.svg',
     description:
       'Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat.',
+    hotspot: {
+      top: 50,
+      left: 58,
+    },
     types: [
       {
         name: 'doors type 1',
@@ -78,6 +113,10 @@ export const info = [
   {
     name: 'windows',
     icon: '/windows.svg',
+    hotspot: {
+      top: 46,
+      left: 101,
+    },
     description:
       'Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat.',
     types: [
@@ -97,6 +136,10 @@ export const info = [
   {
     name: 'garage',
     icon: '/garage.svg',
+    hotspot: {
+      top: 48,
+      left: 135,
+    },
     description:
       'Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat.',
     types: [
@@ -116,6 +159,10 @@ export const info = [
   {
     name: 'gazebo',
     icon: '/gazebo.svg',
+    hotspot: {
+      top: 52,
+      left: 160,
+    },
     description:
       'Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat.',
     types: [
@@ -135,6 +182,10 @@ export const info = [
   {
     name: 'pool',
     icon: '/pool.svg',
+    hotspot: {
+      top: 54,
+      left: 14,
+    },
     description:
       'Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat.',
     types: [
@@ -154,6 +205,10 @@ export const info = [
   {
     name: 'fencing',
     icon: '/fencing.svg',
+    hotspot: {
+      top: 49,
+      left: 24,
+    },
     description:
       'Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat.',
     types: [
