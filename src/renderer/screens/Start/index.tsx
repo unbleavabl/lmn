@@ -1,6 +1,5 @@
 import { FC } from 'react'
 import { StartInteraction } from 'renderer/business-components/StartInteraction'
-import { Heading } from 'renderer/components'
 import { classnames } from 'shared/utils'
 
 import styles from './styles.module.sass'
