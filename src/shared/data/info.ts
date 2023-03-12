@@ -20,7 +20,7 @@ export type Item = {
 export const info: Item[] = [
   {
     name: 'roof',
-    icon: '/roof.svg',
+    icon: 'roof.svg',
     hotspot: {
       top: 20,
       left: 86,
@@ -30,12 +30,12 @@ export const info: Item[] = [
     types: [
       {
         name: 'roof type 1',
-        image: '/roof/type1/image',
+        image: 'roof/type1/image',
         options: [
           {
             name: 'roof type 1 option 1',
             description: 'roof type 1 option 1 description',
-            image: '/roof/type1/option1.image',
+            image: 'roof/type1/option1.image',
           },
         ],
       },
@@ -43,7 +43,7 @@ export const info: Item[] = [
   },
   {
     name: 'plumbing',
-    icon: '/plumbing.svg',
+    icon: 'plumbing.svg',
     hotspot: {
       top: 24,
       left: 63,
@@ -53,12 +53,12 @@ export const info: Item[] = [
     types: [
       {
         name: 'plumbing type 1',
-        image: '/plumbing/type1/image',
+        image: 'plumbing/type1/image',
         options: [
           {
             name: 'plumbing type 1 option 1',
             description: 'plumbing type 1 option 1 description',
-            image: '/plumbing/type1/option1.image',
+            image: 'plumbing/type1/option1.image',
           },
         ],
       },
@@ -66,7 +66,7 @@ export const info: Item[] = [
   },
   {
     name: 'insulation',
-    icon: '/homeicon-01-01.svg',
+    icon: 'homeicon-01-01.svg',
     hotspot: {
       top: 20,
       left: 101,
@@ -76,12 +76,12 @@ export const info: Item[] = [
     types: [
       {
         name: 'insulation type 1',
-        image: '/insulation/type1/image',
+        image: 'insulation/type1/image',
         options: [
           {
             name: 'insulation type 1 option 1',
             description: 'insulation type 1 option 1 description',
-            image: '/insulation/type1/option1.image',
+            image: 'insulation/type1/option1.image',
           },
         ],
       },
@@ -89,7 +89,7 @@ export const info: Item[] = [
   },
   {
     name: 'doors',
-    icon: '/homeicon-01-01.svg',
+    icon: 'homeicon-01-01.svg',
     description:
       'Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat.',
     hotspot: {
@@ -99,12 +99,12 @@ export const info: Item[] = [
     types: [
       {
         name: 'doors type 1',
-        image: '/doors/type1/image',
+        image: 'doors/type1/image',
         options: [
           {
             name: 'doors type 1 option 1',
             description: 'doors type 1 option 1 description',
-            image: '/doors/type1/option1.image',
+            image: 'doors/type1/option1.image',
           },
         ],
       },
@@ -112,7 +112,7 @@ export const info: Item[] = [
   },
   {
     name: 'windows',
-    icon: '/windows.svg',
+    icon: 'windows.svg',
     hotspot: {
       top: 46,
       left: 101,
@@ -122,12 +122,12 @@ export const info: Item[] = [
     types: [
       {
         name: 'windows type 1',
-        image: '/windows/type1/image',
+        image: 'windows/type1/image',
         options: [
           {
             name: 'windows type 1 option 1',
             description: 'windows type 1 option 1 description',
-            image: '/windows/type1/option1.image',
+            image: 'windows/type1/option1.image',
           },
         ],
       },
@@ -135,7 +135,7 @@ export const info: Item[] = [
   },
   {
     name: 'garage',
-    icon: '/garage.svg',
+    icon: 'garage.svg',
     hotspot: {
       top: 48,
       left: 135,
@@ -145,12 +145,12 @@ export const info: Item[] = [
     types: [
       {
         name: 'garage type 1',
-        image: '/garage/type1/image',
+        image: 'garage/type1/image',
         options: [
           {
             name: 'garage type 1 option 1',
             description: 'garage type 1 option 1 description',
-            image: '/garage/type1/option1.image',
+            image: 'garage/type1/option1.image',
           },
         ],
       },
@@ -158,7 +158,7 @@ export const info: Item[] = [
   },
   {
     name: 'gazebo',
-    icon: '/gazebo.svg',
+    icon: 'gazebo.svg',
     hotspot: {
       top: 52,
       left: 160,
@@ -168,12 +168,12 @@ export const info: Item[] = [
     types: [
       {
         name: 'gazebo type 1',
-        image: '/gazebo/type1/image',
+        image: 'gazebo/type1/image',
         options: [
           {
             name: 'gazebo type 1 option 1',
             description: 'gazebo type 1 option 1 description',
-            image: '/gazebo/type1/option1.image',
+            image: 'gazebo/type1/option1.image',
           },
         ],
       },
@@ -181,7 +181,7 @@ export const info: Item[] = [
   },
   {
     name: 'pool',
-    icon: '/pool.svg',
+    icon: 'pool.svg',
     hotspot: {
       top: 54,
       left: 14,
@@ -191,12 +191,12 @@ export const info: Item[] = [
     types: [
       {
         name: 'pool type 1',
-        image: '/pool/type1/image',
+        image: 'pool/type1/image',
         options: [
           {
             name: 'pool type 1 option 1',
             description: 'pool type 1 option 1 description',
-            image: '/pool/type1/option1.image',
+            image: 'pool/type1/option1.image',
           },
         ],
       },
@@ -204,7 +204,7 @@ export const info: Item[] = [
   },
   {
     name: 'fencing',
-    icon: '/fencing.svg',
+    icon: 'fencing.svg',
     hotspot: {
       top: 49,
       left: 24,
@@ -214,12 +214,12 @@ export const info: Item[] = [
     types: [
       {
         name: 'fencing type 1',
-        image: '/fencing/type1/image',
+        image: 'fencing/type1/image',
         options: [
           {
             name: 'fencing type 1 option 1',
             description: 'fencing type 1 option 1 description',
-            image: '/fencing/type1/option1.image',
+            image: 'fencing/type1/option1.image',
           },
         ],
       },

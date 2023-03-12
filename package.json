@@ -1,7 +1,7 @@
 {
   "displayName": "Allstate experience app",
   "name": "allstate-experience-app",
-  "version": "2.0.9",
+  "version": "3.0.0",
   "main": "./node_modules/.dev/main/index.js",
   "resources": "src/resources",
   "author": {
@@ -16,6 +16,7 @@
     "compile:packageJSON": "node ./bin/modules/postbuild/index.js",
     "prebuild": "run-s compile:app compile:packageJSON",
     "build": "./node_modules/.bin/electron-builder",
+    "postinstall": "run-s prebuild install:deps",
     "install:deps": "electron-builder install-app-deps",
     "make:release": "node ./bin/modules/release/index.js",
     "release": "electron-builder --publish always",

@@ -13,10 +13,10 @@ export function MainScreen() {
   return (
     <div className={styles["main-container"]}>
       <div className={styles["image-container"]}>
-        <img className={styles.logo} src="/allstatelogo-01.svg" alt="logo" />
+        <img className={styles.logo} src="allstatelogo-01.svg" alt="logo" />
         <img
           className={styles["house-image"]}
-          src="/mainhouse.jpg"
+          src="mainhouse.jpg"
           alt="house image"
         />
       </div>

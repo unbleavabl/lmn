@@ -37,7 +37,7 @@ export const StartInteraction: FC = () => {
         </div>
       </div>
       <button className={styles["home-cta"]}>
-        <img className={styles["home-icon"]} src="/homeicon-01-01.svg" alt="home-icon" />
+        <img className={styles["home-icon"]} src="homeicon-01-01.svg" alt="home-icon" />
         Home
       </button>
       <SlideToOpen onOpen={() => {navigate("/main")}}>

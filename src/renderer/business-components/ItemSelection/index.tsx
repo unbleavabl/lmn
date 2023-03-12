@@ -126,7 +126,7 @@ export const ItemSelection: FC<ItemSelectionProps> = ({
 }) => {
   return (
     <div className={styles.wrapper}>
-      <IconLabel image="/homeicon-01-01.svg" label="Home" />
+      <IconLabel image="homeicon-01-01.svg" label="Home" />
       {info.map((item) => (
         <ItemPopover
           key={item.name}
