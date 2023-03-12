@@ -16,7 +16,6 @@
     "compile:packageJSON": "node ./bin/modules/postbuild/index.js",
     "prebuild": "run-s compile:app compile:packageJSON",
     "build": "./node_modules/.bin/electron-builder",
-    "postinstall": "run-s prebuild install:deps",
     "install:deps": "electron-builder install-app-deps",
     "make:release": "node ./bin/modules/release/index.js",
     "release": "electron-builder --publish always",
