@@ -18,7 +18,7 @@ export const KeyboardWithInput: FC<KeyboardWithInputProps> = ({
   onConfirm,
   keyboardRef,
 }) => {
-  const [layoutName, setLayoutName] = useState("default");
+  const [layoutName, setLayoutName] = useState("shift");
 
   const commonKeyboardOptions: Partial<KeyboardReactInterface["options"]> = {
     onChange: () => {},
