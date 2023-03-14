@@ -6,6 +6,7 @@ on:
   - pull_request
 
 jobs:
+  runs-on: windows-2019
   build:
     steps:
       - uses: actions/checkout@v2
