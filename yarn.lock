@@ -4066,7 +4066,7 @@
   "resolved" "https://registry.npmjs.org/quick-lru/-/quick-lru-5.1.1.tgz"
   "version" "5.1.1"
 
-"react-dom@^16.8 || ^17.0 || ^18.0", "react-dom@^16.8.0 || ^17.0.0 || ^18.0.0", "react-dom@^18.2.0", "react-dom@>=16.8", "react-dom@>=16.8.0":
+"react-dom@^16.0.0 || ^17.0.0 || ^18.0.0", "react-dom@^16.8 || ^17.0 || ^18.0", "react-dom@^16.8.0 || ^17.0.0 || ^18.0.0", "react-dom@^18.2.0", "react-dom@>=16.8", "react-dom@>=16.8.0":
   "integrity" "sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g=="
   "resolved" "https://registry.npmjs.org/react-dom/-/react-dom-18.2.0.tgz"
   "version" "18.2.0"
@@ -4113,6 +4113,11 @@
   dependencies:
     "@remix-run/router" "1.3.2"
 
+"react-simple-keyboard@^3.5.36":
+  "integrity" "sha512-HJGVPC2/6nP94iCKpnY3U4yxUMKFVu4Y1TmHq4QK/89MlqduOz98NIPHAsg9fMnhn79d49o6ZunrOLIcHLmtsA=="
+  "resolved" "https://registry.npmjs.org/react-simple-keyboard/-/react-simple-keyboard-3.5.36.tgz"
+  "version" "3.5.36"
+
 "react-style-singleton@^2.2.1":
   "integrity" "sha512-ZWj0fHEMyWkHzKYUr2Bs/4zU6XLmq9HsgBURm7g5pAVfyn49DgUiNgY2d4lXRlYSiCif9YBGpQleewkcqddc7g=="
   "resolved" "https://registry.npmjs.org/react-style-singleton/-/react-style-singleton-2.2.1.tgz"
@@ -4122,7 +4127,7 @@
     "invariant" "^2.2.4"
     "tslib" "^2.0.0"
 
-"react@^16.8 || ^17.0 || ^18.0", "react@^16.8.0 || ^17.0.0 || ^18.0.0", "react@^18.2.0", "react@>= 16.8.0", "react@>=16.8", "react@>=16.8.0", "react@>=17.0":
+"react@^16.0.0 || ^17.0.0 || ^18.0.0", "react@^16.8 || ^17.0 || ^18.0", "react@^16.8.0 || ^17.0.0 || ^18.0.0", "react@^18.2.0", "react@>= 16.8.0", "react@>=16.8", "react@>=16.8.0", "react@>=17.0":
   "integrity" "sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ=="
   "resolved" "https://registry.npmjs.org/react/-/react-18.2.0.tgz"
   "version" "18.2.0"
