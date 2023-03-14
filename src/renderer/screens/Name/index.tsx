@@ -32,7 +32,7 @@ export const Name: FC = () => {
         <input
           id="name-input"
           className={classnames(styles.input, "font-xl")}
-          value={name + "_"}
+          value={name}
           onChange={(e) => onChangeInput(e)}
         />
       </div>

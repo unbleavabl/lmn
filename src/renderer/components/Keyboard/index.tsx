@@ -54,7 +54,6 @@ export const KeyboardWithInput: FC<KeyboardWithInputProps> = ({
   };
 
   const onKeyPressInternal = (button: string) => {
-    console.log({button});
     if (button === "{shiftleft}") {
       setLayoutName(layoutName === "default" ? "shift" : "default");
       return;

@@ -20,7 +20,7 @@ export type Item = {
 export const info: Item[] = [
   {
     name: 'roof',
-    icon: 'roof.svg',
+    icon: 'images/roof.svg',
     hotspot: {
       top: 20,
       left: 86,
@@ -30,12 +30,12 @@ export const info: Item[] = [
     types: [
       {
         name: 'roof type 1',
-        image: 'roof/type1/image',
+        image: 'images/roof/type1/image',
         options: [
           {
             name: 'roof type 1 option 1',
             description: 'roof type 1 option 1 description',
-            image: 'roof/type1/option1.image',
+            image: 'images/roof/type1/option1.image',
           },
         ],
       },
@@ -43,7 +43,7 @@ export const info: Item[] = [
   },
   {
     name: 'plumbing',
-    icon: 'plumbing.svg',
+    icon: 'images/plumbing.svg',
     hotspot: {
       top: 24,
       left: 63,
@@ -66,7 +66,7 @@ export const info: Item[] = [
   },
   {
     name: 'insulation',
-    icon: 'homeicon-01-01.svg',
+    icon: 'images/homeicon-01-01.svg',
     hotspot: {
       top: 20,
       left: 101,
@@ -89,7 +89,7 @@ export const info: Item[] = [
   },
   {
     name: 'doors',
-    icon: 'homeicon-01-01.svg',
+    icon: 'images/homeicon-01-01.svg',
     description:
       'Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat.',
     hotspot: {
@@ -112,7 +112,7 @@ export const info: Item[] = [
   },
   {
     name: 'windows',
-    icon: 'windows.svg',
+    icon: 'images/windows.svg',
     hotspot: {
       top: 46,
       left: 101,
@@ -122,12 +122,103 @@ export const info: Item[] = [
     types: [
       {
         name: 'windows type 1',
-        image: 'windows/type1/image',
+        image: 'images/windows/type1/window1.jpeg',
         options: [
           {
             name: 'windows type 1 option 1',
             description: 'windows type 1 option 1 description',
-            image: 'windows/type1/option1.image',
+            image: 'images/windows/type1/window1.jpeg',
+          },
+          {
+            name: 'windows type 1 option 2',
+            description: 'windows type 1 option 2 description',
+            image: 'images/windows/type1/window1.jpeg',
+          },
+          {
+            name: 'windows type 1 option 3',
+            description: 'windows type 1 option 3 description',
+            image: 'images/windows/type1/window1.jpeg',
+          },
+          {
+            name: 'windows type 1 option 4',
+            description: 'windows type 5 option 4 description',
+            image: 'images/windows/type1/window1.jpeg',
+          },
+          {
+            name: 'windows type 1 option 5',
+            description: 'windows type 1 option 5 description',
+            image: 'images/windows/type1/window1.jpeg',
+          },
+          {
+            name: 'windows type 1 option 6',
+            description: 'windows type 1 option 6 description',
+            image: 'images/windows/type1/window1.jpeg',
+          },
+          {
+            name: 'windows type 1 option 7',
+            description: 'windows type 1 option 7 description',
+            image: 'images/windows/type1/window1.jpeg',
+          },
+          {
+            name: 'windows type 1 option 8',
+            description: 'windows type 1 option 8 description',
+            image: 'images/windows/type1/window1.jpeg',
+          },
+          {
+            name: 'windows type 1 option 9',
+            description: 'windows type 1 option 9 description',
+            image: 'images/windows/type1/window1.jpeg',
+          },
+        ],
+      },
+      {
+        name: 'windows type 2',
+        image: 'images/windows/type1/window1.jpeg',
+        options: [
+          {
+            name: 'windows type 2 option 1',
+            description: 'windows type 2 option 1 description',
+            image: 'images/windows/type1/window1.jpeg',
+          },
+          {
+            name: 'windows type 2 option 2',
+            description: 'windows type 2 option 2 description',
+            image: 'images/windows/type1/window1.jpeg',
+          },
+          {
+            name: 'windows type 2 option 3',
+            description: 'windows type 2 option 3 description',
+            image: 'images/windows/type1/window1.jpeg',
+          },
+          {
+            name: 'windows type 2 option 4',
+            description: 'windows type 5 option 4 description',
+            image: 'images/windows/type1/window1.jpeg',
+          },
+          {
+            name: 'windows type 2 option 5',
+            description: 'windows type 2 option 5 description',
+            image: 'images/windows/type1/window1.jpeg',
+          },
+          {
+            name: 'windows type 2 option 6',
+            description: 'windows type 2 option 6 description',
+            image: 'images/windows/type1/window1.jpeg',
+          },
+          {
+            name: 'windows type 2 option 7',
+            description: 'windows type 2 option 7 description',
+            image: 'images/windows/type1/window1.jpeg',
+          },
+          {
+            name: 'windows type 2 option 8',
+            description: 'windows type 2 option 8 description',
+            image: 'images/windows/type1/window1.jpeg',
+          },
+          {
+            name: 'windows type 2 option 9',
+            description: 'windows type 2 option 9 description',
+            image: 'images/windows/type1/window1.jpeg',
           },
         ],
       },
@@ -135,7 +226,7 @@ export const info: Item[] = [
   },
   {
     name: 'garage',
-    icon: 'garage.svg',
+    icon: 'images/garage.svg',
     hotspot: {
       top: 48,
       left: 135,
@@ -158,7 +249,7 @@ export const info: Item[] = [
   },
   {
     name: 'gazebo',
-    icon: 'gazebo.svg',
+    icon: 'images/gazebo.svg',
     hotspot: {
       top: 52,
       left: 160,
@@ -181,7 +272,7 @@ export const info: Item[] = [
   },
   {
     name: 'pool',
-    icon: 'pool.svg',
+    icon: 'images/pool.svg',
     hotspot: {
       top: 54,
       left: 14,
@@ -204,7 +295,7 @@ export const info: Item[] = [
   },
   {
     name: 'fencing',
-    icon: 'fencing.svg',
+    icon: 'images/fencing.svg',
     hotspot: {
       top: 49,
       left: 24,

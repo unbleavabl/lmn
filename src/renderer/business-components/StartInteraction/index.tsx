@@ -45,13 +45,19 @@ export const StartInteraction: FC = () => {
             _ INDIA.
             <br />
           </div>
-          <div className={classnames(styles.logo, "outline")}>Logo</div>
+          <div className={classnames(styles.logo, "outline")}>
+            <img
+              className={styles["logo-icon"]}
+              src="images/allstatelogoicon-01.svg"
+              alt="logo-icon"
+            />
+          </div>
         </div>
       </div>
-      <button className={styles["home-cta"]}>
+      <button className={classnames(styles["home-cta"], "font-n")}>
         <img
           className={styles["home-icon"]}
-          src="homeicon-01-01.svg"
+          src="images/homeicon-01-01.svg"
           alt="home-icon"
         />
         Home
