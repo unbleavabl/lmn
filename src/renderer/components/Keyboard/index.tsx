@@ -22,7 +22,7 @@ export const KeyboardWithInput: FC<KeyboardWithInputProps> = ({
 
   const commonKeyboardOptions: Partial<KeyboardReactInterface["options"]> = {
     onChange: () => {},
-    onKeyPress: (button) => onKeyPressInternal(button),
+    onKeyReleased: (button) => onKeyPressInternal(button),
     theme: "simple-keyboard hg-theme-default hg-layout-default",
     physicalKeyboardHighlight: true,
     syncInstanceInputs: true,

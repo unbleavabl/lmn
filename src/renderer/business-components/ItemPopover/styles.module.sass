@@ -5,6 +5,7 @@
   background: var(--accent-primary)
 
 .popover-anchor
+  background: var(--background-primary)
   position: absolute
   height: 4vh
   width: 4vh
@@ -16,9 +17,26 @@
   width: 24.2vw
   background: var(--background-primary)
   color: white
+  flex-direction: column
+  padding: 0.7vw
+  animation-duration: 400ms
+  animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1)
+  will-change: transform, opacity
+
+.popover-content[data-state='open'][data-side='top']
+  animation-name: slideDownAndFade
+
+.popover-content[data-state='open'][data-side='right']
+  animation-name: slideLeftAndFade
+
+.popover-content[data-state='open'][data-side='bottom']
+  animation-name: slideUpAndFade
+
+.popover-content[data-state='open'][data-side='left']
+  animation-name: slideRightAndFade
 
 .popover-image-container
-  width: 9.5vw
+  width: 22.9vw
   background: white
   display: flex
   justify-content: center
@@ -26,13 +44,18 @@
   overflow: hidden
 
 .popover-image
-  height: 100%
+  width: 100%
+
+.popover-bottom-content
+  display: flex
+  flex-direction: row
+  align-items: center
 
 .popover-text-content
   padding: 3vh 2vh
   display: flex
   flex-direction: column
-  width: 14.56vw
+  width: 20.50vw
 
 .popover-title
   font-weight: bold
@@ -47,15 +70,49 @@
   border-top: 0.5vh solid var(--accent-primary)
   border-right: 0.5vh solid var(--accent-primary)
   transform: rotate(45deg)
-  align-self: flex-end
-  justify-self: flex-end
   background: none
+
+@keyframes slideUpAndFade
+  from 
+    opacity: 0
+    transform: translateY(1vw)
+  to
+    opacity: 1
+    transform: translateY(0)
+
+@keyframes slideRightAndFade
+  from 
+    opacity: 0
+    transform: translateX(-1vw)
+  to
+    opacity: 1
+    transform: translateX(0)
+
+@keyframes slideDownAndFade 
+  from
+    opacity: 0
+    transform: translateY(-1vw)
+  to 
+    opacity: 1
+    transform: translateY(0)
+
+@keyframes slideLeftAndFade
+  from 
+    opacity: 0
+    transform: translateX(1vw)
+  to
+    opacity: 1
+    transform: translateX(0)
+
 
 @keyframes pulse
   0%
     box-shadow: 0 0 0 0.4vw var(--accent-primary), inset 0 0 0 0vw var(--accent-primary)
+    opacity: 0.5
   50%
     box-shadow: 0 0 0 0.5vw var(--accent-primary), inset 0 0 0 0.1vw var(--accent-primary)
+    opacity: 0.8 
   100%
     box-shadow: 0 0 0 0.4vw var(--accent-primary), inset 0 0 0 0vw var(--accent-primary)
+    opacity: 0.5
 

@@ -49,13 +49,17 @@ export const ItemPopover: FC<ItemPopoverProps> = ({
               alt="logo"
             />
           </div>
-          <div className={styles["popover-text-content"]}>
-            <h3 className={classnames(styles["popover-title"], "font-n")}>
-              {item.name}
-            </h3>
-            <p className={classnames(styles["popover-description"], "font-s")}>
-              {item.description}
-            </p>
+          <div className={styles["popover-bottom-content"]}>
+            <div className={styles["popover-text-content"]}>
+              <h3 className={classnames(styles["popover-title"], "font-n")}>
+                {item.name}
+              </h3>
+              <p
+                className={classnames(styles["popover-description"], "font-s")}
+              >
+                {item.description}
+              </p>
+            </div>
             <button
               className={styles.arrow}
               onClick={() => onItemSelect(true)}

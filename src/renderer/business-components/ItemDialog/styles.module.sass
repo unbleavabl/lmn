@@ -1,6 +1,5 @@
 .dialog-overlay
-  background-color: white
-  opacity: 0.5
+  backdrop-filter: blur(10px) brightness(0.7)
   position: absolute
   inset: 0
   animation: overlayShow 150ms cubic-bezier(0.16, 1, 0.3, 1)
@@ -8,11 +7,36 @@
 .dialog-content
   background-color: var(--background-primary)
   position: fixed
-  top: 16vh
+  top: 13vh
   right: 0
   width: 61.45vw
   height: 71.4vh
   padding: 25px
+  animation-duration: 400ms
+  animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1)
+  will-change: transform, opacity
+
+.dialog-content[data-state='open']
+  animation-name: fadeIn
+
+.dialog-content[data-state='closed']
+  animation-name: fadeOut
+
+@keyframes fadeIn
+  from 
+    opacity: 0
+    transform: translateX(20vw)
+  to
+    opacity: 1
+    transform: translateX(0)
+
+@keyframes fadeOut
+  from 
+    opacity: 1
+    transform: translateX(0)
+  to
+    opacity: 0
+    transform: translateX(20vw)
 
 .dialog-content-wrapper
   position: relative
@@ -24,11 +48,11 @@
 .selection-wrapper
   display: flex
   flex-direction: column
-  width: 19.8vw
+  width: 16.8vw
   color: var(--accent-primary)
   text-transform: capitalize
   font-weight: bold
-  padding: 5vh 2vw
+  padding: 5vh 1vw
   flex-shrink: 0
 
 .selection-types
@@ -39,12 +63,10 @@
   gap: 1vh
   margin-top: 1vh
   flex-wrap: wrap
-  padding-left: 1.2vw
-  padding-right: 4vw
 
 .item
-  height: 5.2vh
-  aspect-ratio: 3/4 
+  height: 7.2vh
+  aspect-ratio: 3/4
   display: flex
   justify-content: center
   align-items: center
@@ -69,7 +91,8 @@
   overflow: hidden
   align-items: center
   flex-grow: 0
-  width: 26.5vw
+  max-width: 26.5vw
+  min-width: 26.5vw
 
 .selected-image
   height: 100%
@@ -78,10 +101,9 @@
   flex-grow: 1
   display: flex
   flex-direction: column
-  justify-content: center
+  justify-content: flex-end
   align-items: center
   padding: 2vw
-
 
 .option-title
   font-weight: bold

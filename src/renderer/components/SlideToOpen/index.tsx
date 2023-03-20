@@ -1,19 +1,25 @@
 import { useSpring, animated } from "@react-spring/web";
 import { useDrag } from "@use-gesture/react";
 import { FC, PropsWithChildren, useRef } from "react";
+import { classnames } from "shared/utils";
 
-import styles from './styles.module.sass'
+import styles from "./styles.module.sass";
 
 export type SlideToOpenProps = {
-  onOpen: VoidFunction
-}
+  onOpen: VoidFunction;
+  className?: string;
+};
 
-export const SlideToOpen: FC<PropsWithChildren<SlideToOpenProps>> = ({ onOpen, children }) => {
-  const slideComplete = useRef(false)
+export const SlideToOpen: FC<PropsWithChildren<SlideToOpenProps>> = ({
+  className,
+  onOpen,
+  children,
+}) => {
+  const slideComplete = useRef(false);
   const containerRef = useRef<HTMLDivElement>(null);
   const dragRef = useRef<HTMLDivElement>(null);
-  const lastX = useRef(0)
-  const [{ x, y }, api] = useSpring(() => ({ x: 0, y: 0 }))
+  const lastX = useRef(0);
+  const [{ x, y }, api] = useSpring(() => ({ x: 0, y: 0 }));
 
   // Set the drag hook and define component movement based on gesture data.
   const bind = useDrag(({ down, offset: [ox], cancel }) => {
@@ -22,32 +28,42 @@ export const SlideToOpen: FC<PropsWithChildren<SlideToOpenProps>> = ({ onOpen, c
     const emptyWidth = containerWidth - dragWidth;
     const relativeOffsetX = ox - lastX.current;
     if (!down) {
-      api.set({ x: 0 })
+      api.set({ x: 0 });
       lastX.current = ox;
-      slideComplete.current = false
+      slideComplete.current = false;
       return;
     }
     if (relativeOffsetX < 0) {
-      api.set({ x: 0 })
+      api.set({ x: 0 });
       return;
     }
     if (relativeOffsetX >= emptyWidth && !slideComplete.current) {
-      api.set({ x: emptyWidth })
-      slideComplete.current = true
-      onOpen()
+      api.set({ x: emptyWidth });
+      slideComplete.current = true;
+      onOpen();
       return;
     }
     if (relativeOffsetX >= emptyWidth) {
-      api.set({ x: emptyWidth })
+      api.set({ x: emptyWidth });
       return;
     }
-    api.set({ x: relativeOffsetX })
-  })
+    api.set({ x: relativeOffsetX });
+  });
 
   // Bind it to a component.
-  return <div className={styles["drag-container"]} ref={containerRef} >
-    <animated.div ref={dragRef} className={styles.drag} {...bind()} style={{ x, y, touchAction: 'none' }} >
-      {children}
-    </animated.div>
-  </div>
-}
+  return (
+    <div
+      className={classnames(styles["drag-container"], className ?? '')}
+      ref={containerRef}
+    >
+      <animated.div
+        ref={dragRef}
+        className={styles.drag}
+        {...bind()}
+        style={{ x, y, touchAction: "none" }}
+      >
+        {children}
+      </animated.div>
+    </div>
+  );
+};

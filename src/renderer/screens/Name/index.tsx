@@ -1,5 +1,6 @@
 import { ChangeEventHandler, FC, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { IconLabel } from "renderer/business-components/IconLabel";
 import { KeyboardWithInput } from "renderer/components/Keyboard";
 import { classnames } from "shared/utils";
 
@@ -22,6 +23,11 @@ export const Name: FC = () => {
 
   return (
     <div className={styles.wrapper}>
+      <img
+        className={styles.logo}
+        src="images/allstatelogo-01.svg"
+        alt="logo"
+      />
       <div className={styles["input-wrapper"]}>
         <label
           className={classnames(styles.label, "font-l")}
@@ -53,6 +59,14 @@ export const Name: FC = () => {
         }}
         onConfirm={onConfirm}
       />
+      <button
+        className={classnames(styles.back)}
+        onClick={() => {
+          navigate("/");
+        }}
+      >
+        <IconLabel image="images/homeicon-01-01.svg" label="Home" />
+      </button>
     </div>
   );
 };

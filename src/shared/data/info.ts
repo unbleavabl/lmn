@@ -25,63 +25,44 @@ export const info: Item[] = [
       top: 20,
       left: 86,
     },
-    description:
-      'Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat.',
+    description: '',
     types: [
       {
-        name: 'roof type 1',
-        image: 'images/roof/type1/image',
+        name: 'Shingle roof',
+        image: 'images/roofs/asphalt-shingle-roof.jpg',
         options: [
           {
-            name: 'roof type 1 option 1',
-            description: 'roof type 1 option 1 description',
-            image: 'images/roof/type1/option1.image',
+            name: 'Asphalt shingle roof',
+            description: '',
+            image: 'images/roofs/asphalt-shingle-roof.jpg',
+          },
+          {
+            name: 'Laminated shingle roof',
+            description:
+              'We chose laminated shingles to provide a more natural and deeper look than that ofered by a conventional 3-tab shingle.  Laminated shingles have a manufactur- er-specifed lifespan of 30 years, while 3-tab shingles have a manufacturer-specifed lifespan of 25 years.',
+            image: 'images/roofs/laminated-shingle-roof.jpeg',
           },
         ],
       },
-    ],
-  },
-  {
-    name: 'plumbing',
-    icon: 'images/plumbing.svg',
-    hotspot: {
-      top: 24,
-      left: 63,
-    },
-    description:
-      'Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat.',
-    types: [
       {
-        name: 'plumbing type 1',
-        image: 'plumbing/type1/image',
+        name: 'Metal roof',
+        image: 'images/roofs/metal-roof.png',
         options: [
           {
-            name: 'plumbing type 1 option 1',
-            description: 'plumbing type 1 option 1 description',
-            image: 'plumbing/type1/option1.image',
+            name: 'Metal roof',
+            description: '',
+            image: 'images/roofs/metal-roof.png',
           },
         ],
       },
-    ],
-  },
-  {
-    name: 'insulation',
-    icon: 'images/homeicon-01-01.svg',
-    hotspot: {
-      top: 20,
-      left: 101,
-    },
-    description:
-      'Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat.',
-    types: [
       {
-        name: 'insulation type 1',
-        image: 'insulation/type1/image',
+        name: 'Slate roof',
+        image: 'images/roofs/slate-roof.jpg',
         options: [
           {
-            name: 'insulation type 1 option 1',
-            description: 'insulation type 1 option 1 description',
-            image: 'insulation/type1/option1.image',
+            name: 'Slate roof',
+            description: '',
+            image: 'images/roofs/slate-roof.jpg',
           },
         ],
       },
@@ -90,21 +71,53 @@ export const info: Item[] = [
   {
     name: 'doors',
     icon: 'images/homeicon-01-01.svg',
-    description:
-      'Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat.',
+    description: '',
     hotspot: {
       top: 50,
       left: 58,
     },
     types: [
       {
-        name: 'doors type 1',
-        image: 'doors/type1/image',
+        name: 'French door',
+        image: 'images/doors/french-door.jpg',
         options: [
           {
-            name: 'doors type 1 option 1',
-            description: 'doors type 1 option 1 description',
-            image: 'doors/type1/option1.image',
+            name: 'French door',
+            description: '',
+            image: 'images/doors/french-door.jpg',
+          },
+        ],
+      },
+      {
+        name: 'Exterior doors',
+        image: 'images/doors/full-lit-exterior-door.jpg',
+        options: [
+          {
+            name: 'Full lit exterior door',
+            description:
+              "We opted for full lite exterior door (slab) as it's enhancing aesthetic of house and helps to pass sufcient sunlight in house.",
+            image: 'images/doors/full-lit-exterior-door.jpg',
+          },
+          {
+            name: 'Patio door',
+            description: '',
+            image: 'images/doors/patio-door.jpg',
+          },
+          {
+            name: 'Storme door',
+            description: '',
+            image: 'images/doors/storme-door.jpg',
+          },
+        ],
+      },
+      {
+        name: 'Interior door',
+        image: 'images/doors/interior-door.jpg',
+        options: [
+          {
+            name: 'Interior door',
+            description: '',
+            image: 'images/doors/interior-door.jpg',
           },
         ],
       },
@@ -117,200 +130,147 @@ export const info: Item[] = [
       top: 46,
       left: 101,
     },
-    description:
-      'Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat.',
+    description: '',
     types: [
       {
-        name: 'windows type 1',
-        image: 'images/windows/type1/window1.jpeg',
+        name: 'Bay window',
+        image: 'images/windows/bay-window.jpg',
         options: [
           {
-            name: 'windows type 1 option 1',
-            description: 'windows type 1 option 1 description',
-            image: 'images/windows/type1/window1.jpeg',
-          },
-          {
-            name: 'windows type 1 option 2',
-            description: 'windows type 1 option 2 description',
-            image: 'images/windows/type1/window1.jpeg',
-          },
-          {
-            name: 'windows type 1 option 3',
-            description: 'windows type 1 option 3 description',
-            image: 'images/windows/type1/window1.jpeg',
-          },
-          {
-            name: 'windows type 1 option 4',
-            description: 'windows type 5 option 4 description',
-            image: 'images/windows/type1/window1.jpeg',
-          },
-          {
-            name: 'windows type 1 option 5',
-            description: 'windows type 1 option 5 description',
-            image: 'images/windows/type1/window1.jpeg',
-          },
-          {
-            name: 'windows type 1 option 6',
-            description: 'windows type 1 option 6 description',
-            image: 'images/windows/type1/window1.jpeg',
-          },
-          {
-            name: 'windows type 1 option 7',
-            description: 'windows type 1 option 7 description',
-            image: 'images/windows/type1/window1.jpeg',
-          },
-          {
-            name: 'windows type 1 option 8',
-            description: 'windows type 1 option 8 description',
-            image: 'images/windows/type1/window1.jpeg',
-          },
-          {
-            name: 'windows type 1 option 9',
-            description: 'windows type 1 option 9 description',
-            image: 'images/windows/type1/window1.jpeg',
+            name: 'Bay window',
+            description:
+              'We always wanted to have a Bay window. Just love how it projects outward from the main walls of a building and form a bay or extension. We have three or more distinct windows with openable sashes on the sides, and usually a fxed front section.',
+            image: 'images/windows/bay-window.jpg',
           },
         ],
       },
       {
-        name: 'windows type 2',
-        image: 'images/windows/type1/window1.jpeg',
+        name: 'Double hung window',
+        image: 'images/windows/double-hung-window.jpg',
         options: [
           {
-            name: 'windows type 2 option 1',
-            description: 'windows type 2 option 1 description',
-            image: 'images/windows/type1/window1.jpeg',
+            name: 'Double hung window',
+            description: '',
+            image: 'images/windows/double-hung-window.jpg',
+          },
+        ],
+      },
+      {
+        name: 'Picture window',
+        image: 'images/windows/picture-window.jpg',
+        options: [
+          {
+            name: 'Picture window',
+            description:
+              'We opted for picture window along with double hung side window as it just looks so beautiful and helps with our centralized cooling and heating system.',
+            image: 'images/windows/picture-window.jpg',
           },
           {
-            name: 'windows type 2 option 2',
-            description: 'windows type 2 option 2 description',
-            image: 'images/windows/type1/window1.jpeg',
+            name: 'Picture windows',
+            description: '',
+            image: 'images/windows/picture-windows.jpg',
           },
+        ],
+      },
+      {
+        name: 'Single hung window',
+        image: 'images/windows/single-hung-window.jpg',
+        options: [
           {
-            name: 'windows type 2 option 3',
-            description: 'windows type 2 option 3 description',
-            image: 'images/windows/type1/window1.jpeg',
+            name: 'Single hung window',
+            description: '',
+            image: 'images/windows/single-hung-window.jpg',
           },
+        ],
+      },
+      {
+        name: 'Sliding window',
+        image: 'images/windows/sliding-window.jpg',
+        options: [
           {
-            name: 'windows type 2 option 4',
-            description: 'windows type 5 option 4 description',
-            image: 'images/windows/type1/window1.jpeg',
-          },
-          {
-            name: 'windows type 2 option 5',
-            description: 'windows type 2 option 5 description',
-            image: 'images/windows/type1/window1.jpeg',
-          },
-          {
-            name: 'windows type 2 option 6',
-            description: 'windows type 2 option 6 description',
-            image: 'images/windows/type1/window1.jpeg',
-          },
-          {
-            name: 'windows type 2 option 7',
-            description: 'windows type 2 option 7 description',
-            image: 'images/windows/type1/window1.jpeg',
-          },
-          {
-            name: 'windows type 2 option 8',
-            description: 'windows type 2 option 8 description',
-            image: 'images/windows/type1/window1.jpeg',
-          },
-          {
-            name: 'windows type 2 option 9',
-            description: 'windows type 2 option 9 description',
-            image: 'images/windows/type1/window1.jpeg',
+            name: 'Sliding window',
+            description: '',
+            image: 'images/windows/sliding-window.jpg',
           },
         ],
       },
     ],
   },
   {
-    name: 'garage',
-    icon: 'images/garage.svg',
+    name: 'vents',
+    icon: 'images/homeicon-01-01.svg',
     hotspot: {
-      top: 48,
-      left: 135,
+      top: 20,
+      left: 56,
     },
-    description:
-      'Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat.',
+    description: '',
     types: [
       {
-        name: 'garage type 1',
-        image: 'garage/type1/image',
+        name: 'Furnace vent',
+        image: 'images/vents/furnace-vent.jpg',
         options: [
           {
-            name: 'garage type 1 option 1',
-            description: 'garage type 1 option 1 description',
-            image: 'garage/type1/option1.image',
+            name: 'Furnace vent',
+            description: '',
+            image: 'images/vents/furnace-vent.jpg',
           },
         ],
       },
-    ],
-  },
-  {
-    name: 'gazebo',
-    icon: 'images/gazebo.svg',
-    hotspot: {
-      top: 52,
-      left: 160,
-    },
-    description:
-      'Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat.',
-    types: [
       {
-        name: 'gazebo type 1',
-        image: 'gazebo/type1/image',
+        name: 'Pipe Jack',
+        image: 'images/vents/pipejack.jpg',
         options: [
           {
-            name: 'gazebo type 1 option 1',
-            description: 'gazebo type 1 option 1 description',
-            image: 'gazebo/type1/option1.image',
+            name: 'Pipe Jack',
+            description:
+              "Plastic pipe jack is used to pass sewer gases from houses, we opted for plastic pipe jack because it's cost efective. ",
+            image: 'images/vents/pipejack.jpg',
           },
         ],
       },
-    ],
-  },
-  {
-    name: 'pool',
-    icon: 'images/pool.svg',
-    hotspot: {
-      top: 54,
-      left: 14,
-    },
-    description:
-      'Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat.',
-    types: [
       {
-        name: 'pool type 1',
-        image: 'pool/type1/image',
+        name: 'Power roof vent',
+        image: 'images/vents/power-roof-vent.jpg',
         options: [
           {
-            name: 'pool type 1 option 1',
-            description: 'pool type 1 option 1 description',
-            image: 'pool/type1/option1.image',
+            name: 'Power roof vent',
+            description: '',
+            image: 'images/vents/power-roof-vent.jpg',
           },
         ],
       },
-    ],
-  },
-  {
-    name: 'fencing',
-    icon: 'images/fencing.svg',
-    hotspot: {
-      top: 49,
-      left: 24,
-    },
-    description:
-      'Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat.',
-    types: [
       {
-        name: 'fencing type 1',
-        image: 'fencing/type1/image',
+        name: 'Ridge vent',
+        image: 'images/vents/ridge-vent.jpg',
         options: [
           {
-            name: 'fencing type 1 option 1',
-            description: 'fencing type 1 option 1 description',
-            image: 'fencing/type1/option1.image',
+            name: 'Ridge vent',
+            description:
+              'Installed at the peak of a sloped roof, the ridge vent allows damp, warm air to escape from the attic. A properly installed ridge vent increases energy efciency and prolongs the life of your roof',
+            image: 'images/vents/ridge-vent.jpg',
+          },
+        ],
+      },
+      {
+        name: 'Turbine vent',
+        image: 'images/vents/turbine-vent.jpeg',
+        options: [
+          {
+            name: 'Turbine vent',
+            description: '',
+            image: 'images/vents/turbine-vent.jpeg',
+          },
+        ],
+      },
+      {
+        name: 'Turtle vent',
+        image: 'images/vents/turtle-vent.jpg',
+        options: [
+          {
+            name: 'Turtle vent',
+            description:
+              'We used Turtle vent for kitchen and bathrooms because it was pocket-friendly.',
+            image: 'images/vents/turtle-vent.jpg',
           },
         ],
       },
