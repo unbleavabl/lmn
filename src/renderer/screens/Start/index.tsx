@@ -1,14 +1,17 @@
-import { FC } from 'react'
-import { StartInteraction } from 'renderer/business-components/StartInteraction'
-import { classnames } from 'shared/utils'
+import { FC } from "react";
+import { StartInteraction } from "renderer/business-components/StartInteraction";
 
-import styles from './styles.module.sass'
+import styles from "./styles.module.sass";
 
 export const Start: FC = () => {
   return (
     <div className={styles["start-container"]}>
-      <img className={styles["house-image"]} src="images/StartHome.png" alt="logo" />
+      <img
+        className={styles["house-image"]}
+        src="images/StartHome.png"
+        alt="logo"
+      />
       <StartInteraction />
     </div>
-  )
-}
+  );
+};

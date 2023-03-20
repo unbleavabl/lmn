@@ -25,6 +25,7 @@
   "dependencies": {
     "@radix-ui/react-dialog": "^1.0.3",
     "@radix-ui/react-popover": "^1.0.5",
+    "@radix-ui/react-radio-group": "^1.1.2",
     "@react-spring/web": "^9.7.1",
     "@use-gesture/react": "^10.2.24",
     "electron-router-dom": "^1.0.5",

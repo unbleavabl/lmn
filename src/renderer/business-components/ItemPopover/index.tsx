@@ -45,7 +45,7 @@ export const ItemPopover: FC<ItemPopoverProps> = ({
           <div className={styles["popover-image-container"]}>
             <img
               className={styles["popover-image"]}
-              src={item.types[0].image}
+              src={item.image}
               alt="logo"
             />
           </div>
@@ -60,10 +60,10 @@ export const ItemPopover: FC<ItemPopoverProps> = ({
                 {item.description}
               </p>
             </div>
-            <button
+            {item.types?.length!! && <button
               className={styles.arrow}
               onClick={() => onItemSelect(true)}
-            />
+            />}
           </div>
         </Popover.Content>
       </Popover.Portal>

@@ -4,7 +4,6 @@ import { info, Item } from "shared/data/info";
 import styles from "./styles.module.sass";
 import { ItemPopover } from "../ItemPopover";
 import { ItemDialog } from "../ItemDialog";
-import { IconLabel } from "../IconLabel";
 
 export type ItemSelectionProps = {
   selectedItem: Item | null;

@@ -5,6 +5,8 @@ import { ENVIRONMENT } from 'shared/constants'
 import { createWindow } from 'main/factories'
 import { displayName } from '~/package.json'
 
+import fs from 'fs'
+
 export async function MainWindow() {
   const window = createWindow({
     id: 'main',
@@ -12,6 +14,9 @@ export async function MainWindow() {
     fullscreen: true,
     alwaysOnTop: true,
     autoHideMenuBar: true,
+    webPreferences: {
+      webSecurity: false,
+    },
   })
 
   window.webContents.on('did-finish-load', () => {
