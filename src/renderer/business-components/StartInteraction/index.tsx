@@ -33,11 +33,11 @@ export const StartInteraction: FC = () => {
       <SlideToOpen
         className={"outline"}
         onOpen={() => {
-          navigate("/name");
+          navigate("/main");
         }}
       >
         <div className={classnames(styles.swiper, "font-l")}>
-          Enter your name
+          Slide to start
           <div className={styles.arrow} />
         </div>
       </SlideToOpen>
