@@ -1,0 +1,16 @@
+.radio-root
+    display: flex
+    gap: 2vh
+    justify-content: space-between
+
+.radio-label
+    color: var(--background-primary)
+    background-color: white
+    padding: 4vh
+    min-width: 20vw
+    text-align: center
+    font-weight: bold
+    text-transform: capitalize
+
+.radio-item[data-state='checked'] + .radio-label
+  outline: 2vh solid var(--accent-primary)

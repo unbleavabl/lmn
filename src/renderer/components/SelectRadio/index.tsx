@@ -1,6 +1,8 @@
 import * as RadioGroup from "@radix-ui/react-radio-group";
 import { FC } from "react";
 
+import styles from "./styles.module.sass";
+
 export type SelectRadioProps = {
   options: Array<{
     label: string;
@@ -17,22 +19,19 @@ export const SelectRadio: FC<SelectRadioProps> = ({
 }) => {
   return (
     <RadioGroup.Root
-      className="RadioGroupRoot"
-      defaultValue="default"
-      aria-label="View density"
+      className={styles["radio-root"]}
+      onValueChange={(e) => onChange(e)}
+      value={value}
     >
       {options.map((item) => {
         return (
-          <div style={{ display: "flex", alignItems: "center" }}>
+          <div key={item.value} style={{ display: "flex", alignItems: "center" }}>
             <RadioGroup.Item
-              className="RadioGroupItem"
+              className={styles["radio-item"]}
               value={item.value}
               id={item.value}
-              onChange={(e) => onChange(e.currentTarget.value)}
-            >
-              <RadioGroup.Indicator className="indicator" />
-            </RadioGroup.Item>
-            <label className="Label" htmlFor={item.value}>
+            />
+            <label className={styles["radio-label"]} htmlFor={item.value}>
               {item.label}
             </label>
           </div>

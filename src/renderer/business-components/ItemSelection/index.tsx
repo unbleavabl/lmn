@@ -1,9 +1,10 @@
 import { FC } from "react";
-import { info, Item } from "shared/data/info";
+import { Item } from "shared/data/info";
 
 import styles from "./styles.module.sass";
 import { ItemPopover } from "../ItemPopover";
 import { ItemDialog } from "../ItemDialog";
+import { useInfo } from "renderer/hooks/useInfo";
 
 export type ItemSelectionProps = {
   selectedItem: Item | null;
@@ -14,9 +15,11 @@ export const ItemSelection: FC<ItemSelectionProps> = ({
   selectedItem,
   setSelectedItem,
 }) => {
+  const { items } = useInfo();
+  console.log({items})
   return (
     <div className={styles.wrapper}>
-      {info.map((item) => (
+      {items.map((item) => (
         <ItemPopover
           key={item.name}
           item={item}

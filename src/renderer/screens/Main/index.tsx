@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { IconLabel } from "renderer/business-components/IconLabel";
 import { ItemSelection } from "renderer/business-components/ItemSelection";
+import { useInfo } from "renderer/hooks/useInfo";
 import { Item } from "shared/data/info";
 import { classnames } from "shared/utils";
 
@@ -9,6 +10,7 @@ import styles from "./styles.module.sass";
 
 export function MainScreen() {
   const navigate = useNavigate();
+  const { categoryInfo } = useInfo();
   const [selectedItem, setSelectedItem] = useState<Item | null>(null);
 
   return (
@@ -16,7 +18,7 @@ export function MainScreen() {
       <div className={styles["image-container"]}>
         <img
           className={styles["house-image"]}
-          src="images/MainHome.png"
+          src={categoryInfo.image}
           alt="house image"
         />
       </div>

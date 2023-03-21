@@ -2,6 +2,8 @@ import { ChangeEventHandler, FC, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { IconLabel } from "renderer/business-components/IconLabel";
 import { KeyboardWithInput } from "renderer/components/Keyboard";
+import { SelectRadio } from "renderer/components/SelectRadio";
+import { useInfo } from "renderer/hooks/useInfo";
 import { classnames } from "shared/utils";
 
 import styles from "./styles.module.sass";
@@ -9,6 +11,7 @@ import styles from "./styles.module.sass";
 export const Name: FC = () => {
   const navigate = useNavigate();
   const [name, setName] = useState("");
+  const { filter, setFilter } = useInfo();
   const onConfirm = () => {
     navigate("/main");
   };
@@ -23,6 +26,23 @@ export const Name: FC = () => {
 
   return (
     <div className={styles.wrapper}>
+      <div className={styles["radio-wrapper"]}>
+        <label
+          className={classnames(styles.label, "font-l")}
+        >
+          Select an option
+        </label>
+        <SelectRadio
+          options={[
+            { label: "Exterior", value: "exterior" },
+            { label: "Interior", value: "interior" },
+          ]}
+          onChange={(newFilter) => {
+            setFilter(newFilter);
+          }}
+          value={filter}
+        />
+      </div>
       <img
         className={styles.logo}
         src="images/allstatelogo-01.svg"
