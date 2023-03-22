@@ -26,10 +26,8 @@ export const Name: FC = () => {
 
   return (
     <div className={styles.wrapper}>
-      <div className={styles["radio-wrapper"]}>
-        <label
-          className={classnames(styles.label, "font-l")}
-        >
+      {/* <div className={styles["radio-wrapper"]}>
+        <label className={classnames(styles.label, "font-l")}>
           Select an option
         </label>
         <SelectRadio
@@ -42,13 +40,49 @@ export const Name: FC = () => {
           }}
           value={filter}
         />
+        </div>
+      <div>
+        <button
+          className={classnames(styles.confirm, "font-l")}
+          onClick={() => {
+            navigate("/main");
+          }}
+        >
+          Confirm
+        </button>
+      </div>
+        */}
+      <div className={styles["radio-wrapper"]}>
+        <label className={classnames(styles.label, "font-l")}>
+          Select an option
+        </label>
+        <div className={styles.categoryWrapper}>
+          <button
+            className={classnames(styles.categoryButton, "font-l")}
+            onClick={() => {
+              setFilter("exterior");
+              navigate("/main");
+            }}
+          >
+            Exterior
+          </button>
+          <button
+            className={classnames(styles.categoryButton, "font-l")}
+            onClick={() => {
+              setFilter("interior");
+              navigate("/main");
+            }}
+          >
+            Interior
+          </button>
+        </div>
       </div>
       <img
         className={styles.logo}
         src="images/allstatelogo-01.svg"
         alt="logo"
       />
-      <div className={styles["input-wrapper"]}>
+      {/* <div className={styles["input-wrapper"]}>
         <label
           className={classnames(styles.label, "font-l")}
           htmlFor="name-input"
@@ -78,7 +112,7 @@ export const Name: FC = () => {
           setName((name) => name + val);
         }}
         onConfirm={onConfirm}
-      />
+      /> */}
       <button
         className={classnames(styles.back)}
         onClick={() => {

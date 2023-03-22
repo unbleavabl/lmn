@@ -12,7 +12,7 @@ export const StartInteraction: FC = () => {
       <div className={classnames(styles.spacer, "outline")} />
       <div className={classnames(styles["logo-name-wrapper"], "outline")}>
         <div className={classnames(styles["name-wrapper"], "outline font-n")}>
-          Gloria & Joe's Bunglow
+          Gloria & Joe's Home
         </div>
         <div className={styles["logo-wrapper"]}>
           <img
@@ -33,7 +33,7 @@ export const StartInteraction: FC = () => {
       <SlideToOpen
         className={"outline"}
         onOpen={() => {
-          navigate("/main");
+          navigate("/name");
         }}
       >
         <div className={classnames(styles.swiper, "font-l")}>

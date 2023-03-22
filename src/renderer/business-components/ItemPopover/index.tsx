@@ -40,7 +40,9 @@ export const ItemPopover: FC<ItemPopoverProps> = ({
         <Popover.Content
           className={styles["popover-content"]}
           side="right"
-          sideOffset={50}
+          avoidCollisions
+          align="end"
+          alignOffset={-100}
         >
           <div className={styles["popover-image-container"]}>
             <img
