@@ -332,7 +332,7 @@ export const info: Info = {
               {
                 name: 'Concrete Driveway',
                 description:
-                  "Concrete driveways also called as cement driveways offer a variety of decorative options which make these driveways unique from other methods of driveway construction.A concrete driveway doesn't just last a little longer than asphalt. On average, it can last 50-60% longer. The secret behind the strength of concrete lies in the science. Concrete is made from a paste made of portland cement and water, and large and small aggregates (rocks).",
+                  "Concrete driveways also called as cement driveways offer a variety of decorative options which make these driveways unique from other methods of driveway construction. A concrete driveway doesn't just last a little longer than asphalt. On average, it can last 50-60% longer. The secret behind the strength of concrete lies in the science. Concrete is made from a paste made of portland cement and water, and large and small aggregates (rocks).",
                 image: 'images/outdoor/concrete-driveway.jpg',
               },
             ],
