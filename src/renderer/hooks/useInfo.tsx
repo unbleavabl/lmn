@@ -26,7 +26,6 @@ export const InfoProvider: FC<PropsWithChildren> = ({ children }) => {
   const [filter, setFilter] = useState("exterior");
 
   const items = useMemo(() => {
-    console.log({ filter });
     return info[filter]?.data;
   }, [filter]);
 

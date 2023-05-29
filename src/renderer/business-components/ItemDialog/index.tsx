@@ -17,7 +17,6 @@ export const ItemDialog: FC<ItemDialogProps> = ({
   open,
   onOpenChange,
 }) => {
-  console.log({item});
   const [selectedType, setSelectedType] = useState(item?.types?.[0]);
   const [selectedOption, setSelectedOption] = useState(
     item?.types?.[0].options[0]

@@ -16,7 +16,6 @@ export const ItemSelection: FC<ItemSelectionProps> = ({
   setSelectedItem,
 }) => {
   const { items } = useInfo();
-  console.log({items})
   return (
     <div className={styles.wrapper}>
       {items.map((item) => (
