@@ -104,13 +104,13 @@ export const info: Info = {
                 name: 'Metal cladding',
                 description:
                   'Metal Roofing panels can be constructed of aluminum, galvanized, zincalume, copper and stainless steel.  Metal roof is light weight and water resistant',
-                image: '',
+                image: 'images/roofs/cladding/metal.png',
               },
               {
                 name: 'Laminated / Architectural Shingle',
                 description:
                   'Laminated shingles provide a more natural and deeper look than that offered by a conventional 3-tab shingle. Laminated shingles have a manufacturer-specified lifespan of 30 years, while 3-tab shingles have a manufacturer-specified lifespan of 25 years.',
-                image: '',
+                image: 'images/roofs/cladding/laminated-shingle.jpeg',
               },
               {
                 name: '3 Tab Shingle',
@@ -122,43 +122,43 @@ export const info: Info = {
                 name: 'Ridge shingle',
                 description:
                   'Ridge shingles cover the peak of the roof, where two angles meet, they play a critical role in keeping rain and melting snow from leaking into the house.',
-                image: '',
+                image: 'images/roofs/cladding/ridge-shingle.png',
               },
               {
                 name: 'Clay tile roofing',
                 description:
                   'Tile roofs are constructed of clay or concrete. It can weigh 650-1840Lbs which requires stronger roof framing and also has a life span of 50 years',
-                image: '',
+                image: 'images/roofs/cladding/clay-tile.jpg',
               },
               {
                 name: 'Slate tile roofing',
                 description:
                   'Slate is natural stone tiles which lasts for hundreds of years. It resist chipping and cracking. As compared to other shingles it is fireproof. Also it has low maintenance cost.',
-                image: '',
+                image: 'images/roofs/cladding/slate-tile.jpg',
               },
               {
                 name: 'Wood shake roofing',
                 description:
                   'Wood Shake are usually made-up of western red cedar. Available in 18” and 24” length and widths not less than 3”. Untreated shakes have life span of 15-20 years and treated shakes have life span of 30 years. Weight of wood shakes is between 200-400 pounds.',
-                image: '',
+                image: 'images/roofs/cladding/wood-shake.jpg',
               },
               {
                 name: 'Wood Shingles',
                 description:
                   'Wood shingles can be installed using various exposures depending on the length of shingles. Untreated shingles have a life span of 15-20 years and treated shingles have a lifespan of 30 years.',
-                image: '',
+                image: 'images/roofs/cladding/wood-shingle.jpg',
               },
               {
                 name: 'Modified Bitumen Roofing',
                 description:
                   'Modified bitumen is thought of as the evolutionary cousin of the built-up roofing systems (BUR) that have been used on low-slope roofs for more than 100 years. It is made of asphalt combined with polymerized rubber or plastic, then reinforced with fiberglass to create a rugged-yet-flexible waterproof membrane.',
-                image: '',
+                image: 'images/roofs/cladding/modified-bitumen.jpg',
               },
               {
                 name: 'Rolled Roofing',
                 description:
                   'Roll roofing is a material roll used for covering the roofs of buildings that feature low sloped roofs in the Northern regions of the United States, Canada and a few European nations. Commonly used roll roofing material is asphalt roll roofing. This material is the same as that used in asphalt shingles.',
-                image: '',
+                image: 'images/roofs/cladding/rolled-roofing.jpg',
               },
             ],
           },
@@ -200,7 +200,7 @@ export const info: Info = {
                 name: 'Roof Pipe jack',
                 description:
                   'Re-formed flange placed over a vent pipe to seal the roof around the vent pipe opening. Made of lead, rubber, or metal.',
-                image: '',
+                image: 'images/roofs/vents/pipejack.jpg',
               },
               {
                 name: 'Split boot / Mast head',
@@ -212,25 +212,25 @@ export const info: Info = {
                 name: 'Gable Vent',
                 description:
                   'A gable vent is an opening that allows the flow of air from one part of the gable roof to the other. As opposed to active ventilation, gable vents allow proper air circulation inside the attic. They provide a natural airflow in your home.',
-                image: '',
+                image: 'images/roofs/vents/gable.jpg',
               },
             ],
           },
           {
             name: 'Roof Under lay',
-            image: '',
+            image: 'images/roofs/underlay/15-pound-felt.jpg',
             options: [
               {
                 name: '15 Pound felt',
                 description:
                   '15 Pound felt A roofing paper-like sheet material saturated with asphalt and sold in rolls. Asphalt felt is used as a moisture barrier under roofing, side walls, and flooring.',
-                image: '',
+                image: 'images/roofs/underlay/15-pound-felt.jpg',
               },
               {
                 name: 'Synthetic felt',
                 description:
                   "Synthetic underlayment is a layer of laminated polypropylene or polyethylene plastic material that goes over the roof deck. It's purpose is to provide an extra layer of protection to the roof system.",
-                image: '',
+                image: 'images/roofs/underlay/synthetic-felt.jpg',
               },
             ],
           },
@@ -266,40 +266,40 @@ export const info: Info = {
                 name: 'Down Spout',
                 description:
                   'A downspout is a lightweight tube that extends vertically from the gutter trough to the ground and exists to direct excess rainwater away from your home in a controlled manner.',
-                image: '',
+                image: 'images/roofs/gutter/down-spout.png',
               },
             ],
           },
           {
             name: 'Fascia',
-            image: '',
+            image: 'images/roofs/fascia/fascia.jpg',
             options: [
               {
                 name: 'Fascia',
                 description:
                   "Technically part of the roof system of your house, but from the ground, it looks like part of the wall. Its proposes is to cover the ends of the rafters, and because that's where water drains off the roof, the gutters are often attached to it.",
-                image: '',
+                image: 'images/roofs/fascia/fascia.jpg',
               },
             ],
           },
           {
             name: 'Soffit',
-            image: '',
+            image: 'images/roofs/soffit/soffit.jpg',
             options: [
               {
                 name: 'Soffit',
                 description:
                   'To protect rafters from the elements. Keeping moisture away from the rafters reduces the chance of mold, and helps preserve the life of the materials.',
-                image: '',
+                image: 'images/roofs/soffit/soffit.jpg',
               },
             ],
           },
           {
-            name: 'Satelit Dish',
+            name: 'Satellite Dish',
             image: '',
             options: [
               {
-                name: 'Soffit',
+                name: 'Satellite Dish',
                 description:
                   'What is satellite dish used for? Parabolic microwave antenna used to transmit and receive satellite signals. On the downlink, the dish collects data or video signals from orbiting satellites and focuses them to where a feed horn collects them and passes the signal on to be amplified and sent to a satellite receiver box.',
                 image: '',
@@ -443,73 +443,72 @@ export const info: Info = {
         ],
       },
       {
-        name: 'window component',
+        name: 'window components',
         icon: 'images/windows.svg',
         hotspot: {
           top: 52,
           left: 101,
         },
-        description:
-          'We opted for picture window along with double hung side window as it just looks so beautiful and helps with our centralized cooling and heating system.',
-        image: 'images/windows/picture-wide.jpg',
+        description: '',
+        image: 'images/window-components/awning.jpg',
         types: [
           {
             name: 'Awning',
-            image: '',
+            image: 'images/window-components/awning.jpg',
             options: [
               {
                 name: 'Awning',
                 description:
                   'Pre-manufactured vertical or horizontal fixed panel type, aluminum or steel awning, for doors or windows',
-                image: '',
+                image: 'images/window-components/awning.jpg',
               },
             ],
           },
           {
             name: 'Window wrap',
-            image: '',
+            image: 'images/window-components/window-wrap.jpg',
             options: [
               {
                 name: 'Window wrap',
                 description:
                   'The window wrap is the material that is installed around the outside of windows. Window wrap typically consists of vinyl coated aluminum that is rolled onto the surface of the window frame.',
-                image: '',
+                image: 'images/window-components/window-wrap.jpg',
               },
             ],
           },
           {
             name: 'Glazing bead',
-            image: '',
+            image: 'images/window-components/glazing-bead.jpg',
             options: [
               {
                 name: 'Glazing bead',
                 description:
                   'The glazing bead is a vinyl strip along your window frame that helps block out drafts',
-                image: '',
+                image: 'images/window-components/glazing-bead.jpg',
               },
             ],
           },
           {
             name: 'Window shutters',
-            image: '',
+            image: 'images/window-components/window-shutters.jpg',
             options: [
               {
                 name: 'Window shutters',
                 description:
                   'Shutters are used to control the amount of sunlight that enters a room, to provide privacy, security, to protect against weather or unwanted intrusion or damage and to enhance the aesthetics of a building.',
-                image: '',
+                image: 'images/window-components/window-shutters.jpg',
               },
             ],
           },
           {
             name: 'Window Screen',
-            image: '',
+            image: 'images/window-components/window-screen.jpg',
             options: [
               {
                 name: 'Window Screen',
                 description:
                   'Window screens primarily maintain the view and airflow of windows while protecting against insects from flying or crawling inside the house.',
-                image: '',
+                image: 'images/window-components/window-screen.jpg',
               },
             ],
           },
@@ -558,49 +557,49 @@ export const info: Info = {
                 name: 'Board fence',
                 description:
                   'Board Fence Constructed of wood, metal or concrete posts which are usually installed 8’ on center 2”x4”x8’rails run horizontally. Depending on height there may be 2 or 3 rails per fence section.',
-                image: '',
+                image: 'images/outdoor/fence/board.jpg',
               },
               {
                 name: 'Shadow box fence',
                 description:
                   'Shadow Box Fence Constructed of 3 rails and the boards are equally spaced and installed on both sides of the fence. Also referred to as a Good Neighbour or Privacy Fence.',
-                image: '',
+                image: 'images/outdoor/fence/shadow-box.jpg',
               },
               {
                 name: 'Picket fence',
                 description:
                   'Picket Fence Constructed in the same manner as a board fence. Rails, Posts and Board/Pickets The boards are equally spaced allows for airflow Does not provide privacy like a board fence.',
-                image: '',
+                image: 'images/outdoor/fence/picket.jpg',
               },
               {
                 name: 'Split rail fence',
                 description:
                   'Constructed of cedar hand split posts and rails for a rustic look 2 rails high are usually 3’ high, 3 rails 4’ and 4 rails 5’ 2 & 3 rail fences installed with wire mesh. Wire mesh keeps small animals and pets from getting through the fence.',
-                image: '',
+                image: 'images/outdoor/fence/split-rail.jpg',
               },
               {
                 name: 'Vinyl fence',
                 description:
                   'Constructed of posts that come in variety of sizes, set in concrete, posts are capped. Fence heights are 4’,5’ and 6’ Vinyl panels are installed between two vinyl rails. Vinyl fences can be simple or complex in design.',
-                image: '',
+                image: 'images/outdoor/fence/vinyl.jpg',
               },
               {
                 name: 'Chainlink fence',
                 description:
                   'Constructed of galvanized posts set in concrete on 8’ or 10’ centers. Line posts are 1 5/8” in diameter, end, corner and gate posts are 2” in diameter. Top rail is 1 3/8” in diameter.',
-                image: '',
+                image: 'images/outdoor/fence/chain-link.jpg',
               },
               {
-                name: 'Worught iron fence',
+                name: 'Wrought iron fence',
                 description:
                   'Constructed of iron welded together to create sections Wrought iron fences can be simple or ornate in design Does not provide privacy as other materials do.',
-                image: '',
+                image: 'images/outdoor/fence/wrought-iron.jpg',
               },
               {
                 name: 'Metal fence',
                 description:
                   'Constructed of metal or aluminum. Panels come in various heights and lengths. Used around pools, gardens and communities.',
-                image: '',
+                image: 'images/outdoor/fence/metal.jpg',
               },
             ],
           },
@@ -615,89 +614,94 @@ export const info: Info = {
         },
         description:
           'We went for a vinyl siding (which is a plastic exterior siding) for decoration and weatherproofing. It was also pocket friendly and gave us the sturdiness we were looking for.',
-        image: 'images/siding/vinyl-wide.jpg',
+        image: 'images/siding-wrap-components/siding/vinyl-wide.jpg',
         types: [
           {
             name: 'Siding',
-            image: 'images/siding/vinyl.jpg',
+            image: 'images/siding-wrap-components/siding/vinyl.jpg',
             options: [
               {
                 name: 'Vinyl siding',
                 description:
                   'Vinyl siding is plastic exterior siding for houses and small apartment buildings, used for decoration and weatherproofing, imitating wood clapboard, board and batten or shakes, and used instead of other materials such as aluminum or fiber cement siding.',
-                image: 'images/siding/vinyl.jpg',
+                image: 'images/siding-wrap-components/siding/vinyl.jpg',
               },
               {
                 name: 'Metal siding',
                 description:
                   'Aluminum siding is made from aluminum coil stock, which is chemically coated to protect the metal and then painted for further protection, as well as aesthet- ics. After coating, the siding is baked for durability, with enamel often added to create desired textures.',
-                image: '',
+                image: 'images/siding-wrap-components/siding/metal.jpg',
               },
               {
                 name: 'Wooden siding',
                 description:
                   'Wood siding, or “cladding”, is natural, attractive material used to cover and protect the exterior of a house. Some siding is designed for vertical installation, in a board-and-batten style. Others, such as shingles, clapboards, or shakes are installed horizontally',
-                image: '',
+                image: 'images/siding-wrap-components/siding/wooden.jpg',
               },
               {
                 name: 'Stucco siding',
                 description:
                   "Stucco siding is solid, water-shedding, and impact-re- sistant. It offers rock-hard protection to the sub-wall, but water that gets in doesn't become trapped between the siding and the structure. This makes stucco resistant to rot and fungus and protects the air quality inside the house.",
-                image: '',
+                image: 'images/siding-wrap-components/siding/stucco.jpg',
               },
               {
                 name: 'Brick siding',
                 description:
                   'Brick siding, also known as brick veneer, is essentially a freestanding brick wall installed on the exterior wood frame. The appearance of brick siding might make a home look like the solid brick walls support it. However, brick siding offers no structural properties to homes.',
-                image: '',
+                image: 'images/siding-wrap-components/siding/brick.jpg',
               },
             ],
           },
           {
             name: 'Wraps',
-            image: '',
+            image: 'images/siding-wrap-components/wrap/house.webp',
             options: [
               {
                 name: 'House wrap',
                 description:
                   'House wraps prevent moisture, mold, and drafts from entering your home and can act as a strong barrier against moisture or wind. House wrap is especially useful in humid climates that receive a lot of rain because it can prevent damage from water penetration.',
-                image: 'images/siding/vinyl.jpg',
+                image: 'images/siding-wrap-components/wrap/house.webp',
               },
               {
                 name: 'Aluminium foil wrap',
                 description:
                   'House wraps prevent moisture, mold, and drafts from entering your home and can act as a strong barrier against moisture or wind. Foil vapor barrier will protect the building structure by blocking moisture from getting inside walls.',
-                image: '',
+                image: 'images/siding-wrap-components/wrap/aluminium-foil.jpg',
               },
             ],
           },
           {
             name: 'Siding Components',
-            image: '',
+            image:
+              'images/siding-wrap-components/siding-components/inside-corner-post.jpg',
             options: [
               {
                 name: 'Inside Corner Post',
                 description:
                   'Inside Corner Post is used at the inside corners of a wall, where the siding meets from 2 adjoining walls.',
-                image: 'images/siding/vinyl.jpg',
+                image:
+                  'images/siding-wrap-components/siding-components/inside-corner-post.jpg',
               },
               {
                 name: 'Outside corner post',
                 description:
                   'Outside Corner Post protects corners and has a receiving channel that hides the ends of siding panels for a finished, professional vinyl siding installation.',
-                image: '',
+                image:
+                  'images/siding-wrap-components/siding-components/outside-corner-post.jpg',
               },
               {
                 name: 'J trim',
                 description:
                   'J-Trim is used to cap raw panel edges where run-off is not a problem. Most commonly, it is used to cap the top edges of skirting, the top and sides of doors, the bottom and sides of windows, and in many cases the top of windows for aesthetics and continuity.',
-                image: '',
+                image:
+                  'images/siding-wrap-components/siding-components/j-trim.jpg',
               },
               {
-                name: 'Drier Vent Cover',
+                name: 'Dryer Vent Cover',
                 description:
                   'An energy efficient dryer vent cover blocks animals from coming inside while also reducing lint build- up, and thus lowers the chances of developing a clog.',
-                image: '',
+                image:
+                  'images/siding-wrap-components/siding-components/dryer-vent-cover.jpg',
               },
             ],
           },
@@ -723,113 +727,113 @@ export const info: Info = {
         },
         description:
           'This includes Detached Garage, Sheds, decks & other outdoor structures which are not part of the house.',
-        image: 'images/garage/garage-door.jpg',
+        image: 'images/outdoor-structures/garage-door.jpg',
         types: [
           {
             name: 'Garage',
-            image: '',
+            image: 'images/outdoor-structures/garage.jpg',
             options: [
               {
                 name: 'Garage',
                 description:
                   'Its a simple roofed structure made of metal used for garden storage, to shelter animals, or as a workshop.',
-                image: 'images/siding/vinyl.jpg',
+                image: 'images/outdoor-structures/garage.jpg',
               },
             ],
           },
           {
             name: 'Metal Shed',
-            image: '',
+            image: 'images/outdoor-structures/metal-shed.jpg',
             options: [
               {
                 name: 'Metal Shed',
                 description:
                   'Its a simple roofed structure made of metal used for garden storage, to shelter animals, or as a workshop',
-                image: '',
+                image: 'images/outdoor-structures/metal-shed.jpg',
               },
             ],
           },
           {
             name: 'Vinyl Shed',
-            image: '',
+            image: 'images/outdoor-structures/vinyl-shed.jpg',
             options: [
               {
                 name: 'Vinyl Shed',
                 description:
                   'Its a simple roofed structure made of vinyl used for garden storage, to shelter animals, or as a workshop.',
-                image: '',
+                image: 'images/outdoor-structures/vinyl-shed.jpg',
               },
             ],
           },
           {
             name: 'Car port',
-            image: '',
+            image: 'images/outdoor-structures/car-port.jpg',
             options: [
               {
                 name: 'Car port',
                 description:
                   'A shelter for a car consisting of a roof supported on posts, built beside a house.',
-                image: '',
+                image: 'images/outdoor-structures/car-port.jpg',
               },
             ],
           },
           {
             name: 'Back yard deck',
-            image: '',
+            image: 'images/outdoor-structures/back-yard-deck.jpg',
             options: [
               {
                 name: 'Back yard deck',
                 description:
                   'A deck is typically located at the back of a house and overlooks the backyard.',
-                image: '',
+                image: 'images/outdoor-structures/back-yard-deck.jpg',
               },
             ],
           },
           {
             name: 'Gazebo',
-            image: '',
+            image: 'images/outdoor-structures/gazebo.jpg',
             options: [
               {
                 name: 'Gazebo',
                 description:
                   'A small building, especially one in the garden of a house, that gives a wide view of the surrounding area.',
-                image: '',
+                image: 'images/outdoor-structures/gazebo.jpg',
               },
             ],
           },
           {
             name: 'Patio & Patio cover',
-            image: '',
+            image: 'images/outdoor-structures/patio-cover.jpg',
             options: [
               {
                 name: 'Patio & Patio cover',
                 description:
                   'A paved outdoor area adjoining a house. Patio Cover is structure covering a patio or deck area consisting of a solid or open roof and structural supports, attached to or detached from the primary dwelling.',
-                image: '',
+                image: 'images/outdoor-structures/patio-cover.jpg',
               },
             ],
           },
           {
             name: 'Pool enclosure',
-            image: '',
+            image: 'images/outdoor-structures/pool-enclosure.webp',
             options: [
               {
                 name: 'Pool enclosure',
                 description:
                   'A pool enclosure is a structure that surrounds the sides and top of a pool.',
-                image: '',
+                image: 'images/outdoor-structures/pool-enclosure.webp',
               },
             ],
           },
           {
             name: 'Air conditioner fins',
-            image: '',
+            image: 'images/outdoor-structures/air-conditioner-fins.jpeg',
             options: [
               {
                 name: 'Air conditioner fins',
                 description:
                   "Thin metal slats that run along the outline of your exterior AC unit. The purpose of the condenser fins is to move warm air away from the air conditioner while it's running.",
-                image: '',
+                image: 'images/outdoor-structures/air-conditioner-fins.jpeg',
               },
             ],
           },
