@@ -43,6 +43,7 @@ export const ItemPopover: FC<ItemPopoverProps> = ({
           avoidCollisions
           align="end"
           alignOffset={-100}
+          collisionPadding={{bottom: 300}}
         >
           <div className={styles["popover-image-container"]}>
             <img
