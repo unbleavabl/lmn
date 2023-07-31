@@ -58,7 +58,7 @@ export const ItemPopover: FC<ItemPopoverProps> = ({
                 {item.name}
               </h3>
               <p
-                className={classnames(styles["popover-description"], "font-s")}
+                className={classnames(styles["popover-description"], "font-sn")}
               >
                 {item.description}
               </p>

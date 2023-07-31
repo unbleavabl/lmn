@@ -111,7 +111,7 @@ export const ItemDialog: FC<ItemDialogProps> = ({
                   {selectedOption?.name}
                 </h3>
                 <p
-                  className={classnames(styles["option-description"], "font-s")}
+                  className={classnames(styles["option-description"], "font-sn")}
                 >
                   {selectedOption?.description}
                 </p>

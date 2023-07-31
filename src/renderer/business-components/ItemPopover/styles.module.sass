@@ -57,6 +57,7 @@
   display: flex
   flex-direction: column
   width: 20.50vw
+  gap: 1vh
 
 .popover-title
   font-weight: bold
@@ -74,7 +75,7 @@
   background: none
 
 @keyframes slideUpAndFade
-  from 
+  from
     opacity: 0
     transform: translateY(1vw)
   to
@@ -82,23 +83,23 @@
     transform: translateY(0)
 
 @keyframes slideRightAndFade
-  from 
+  from
     opacity: 0
     transform: translateX(-1vw)
   to
     opacity: 1
     transform: translateX(0)
 
-@keyframes slideDownAndFade 
+@keyframes slideDownAndFade
   from
     opacity: 0
     transform: translateY(-1vw)
-  to 
+  to
     opacity: 1
     transform: translateY(0)
 
 @keyframes slideLeftAndFade
-  from 
+  from
     opacity: 0
     transform: translateX(1vw)
   to
@@ -112,7 +113,7 @@
     opacity: 0.5
   50%
     box-shadow: 0 0 0 0.5vw var(--accent-primary), inset 0 0 0 0.1vw var(--accent-primary)
-    opacity: 0.8 
+    opacity: 0.8
   100%
     box-shadow: 0 0 0 0.4vw var(--accent-primary), inset 0 0 0 0vw var(--accent-primary)
     opacity: 0.5
