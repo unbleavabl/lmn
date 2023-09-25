@@ -1,7 +1,7 @@
 {
   "displayName": "Allstate experience app",
   "name": "allstate-experience-app",
-  "version": "4.2.2",
+  "version": "4.2.3",
   "main": "./node_modules/.dev/main/index.js",
   "resources": "src/resources",
   "author": {
